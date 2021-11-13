@@ -13,9 +13,6 @@ describe('Users', () => {
       })
     expect(201);
 
-    console.log('body id')
-    console.log(response.body.id)
-    console.log(validate(response.body.id))
     expect(validate(response.body.id)).toBe(true);
 
     expect(response.body).toMatchObject({
